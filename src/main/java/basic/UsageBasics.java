@@ -1,4 +1,4 @@
-package podstawy;
+package basic;
 
 public class UsageBasics {
     private static int a = 3;

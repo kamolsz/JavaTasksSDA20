@@ -8,7 +8,10 @@ public class UsageForLoops {
 //        printnumbersDec(1, 100);
 //        printEvenNumbers(1, 100);
 //        numbersDivisible(0, 100);
-        sum (1,459);
+//        sum (1,459);
+        printTriangle2(5);
+        printTriangle3(5);
+
 
     }
 
@@ -60,10 +63,10 @@ public class UsageForLoops {
 
     }
 
-    public static void sum (int startNumber, int endNumber){
-        int sum=0;
+    public static void sum(int startNumber, int endNumber) {
+        int sum = 0;
         for (int i = startNumber; i <= endNumber; i++) {
-            sum +=i;
+            sum += i;
         }
         System.out.println(sum);
 
@@ -71,11 +74,44 @@ public class UsageForLoops {
 
     public static void sumArithmetic(int startNumber, int endNumber) {
         int sum = 0;
-        for (int i = startNumber; i <= endNumber; i+=2) {
+        for (int i = startNumber; i <= endNumber; i += 2) {
             sum += i;
         }
         System.out.println(sum);
 
+    }
+
+    public static void printTriangle(int number) {
+        for (int i = 1; i <= number; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+
+        }
+    }
+
+    public static void printTriangle2(int number) {
+        for (int i = 1; i <= number; i++) {
+            for (int j = number; j >= i; j--) {
+                System.out.print("*");
+            }
+            System.out.println();
+
+        }
+    }
+
+    public static void printTriangle3(int number) {
+        for (int i = 1; i <= number; i++) {
+            for (int j = 1; j < i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = number; k >= i; k--) {
+                System.out.print("*");
+            }
+            System.out.println();
+
+        }
     }
 
 }
